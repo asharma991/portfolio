@@ -918,7 +918,7 @@ var homePageLink = document.getElementById("homePageLink");
 homePageLink === null || homePageLink === void 0 || homePageLink.setAttribute("href", "/portfolio/");
 var aboutPageLink = document.getElementById("aboutPageLink");
 aboutPageLink === null || aboutPageLink === void 0 || aboutPageLink.setAttribute("href", "/portfolio/about");
-var projectsPageLink = document.getElementById("projectsPageLink");
+var projectsPageLink = document.getElementById("projectPageLink");
 projectsPageLink === null || projectsPageLink === void 0 || projectsPageLink.setAttribute("href", "/portfolio/projects");
 var currentPath = location.pathname;
 var linksArr = document.getElementsByClassName("link");
@@ -952,4 +952,4 @@ resumeLink === null || resumeLink === void 0 ? void 0 : resumeLink.setAttribute(
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlec6a3d4239704062d0844.js.map
+//# sourceMappingURL=bundle64cc17395b38444f9c3a.js.map
