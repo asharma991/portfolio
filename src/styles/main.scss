@@ -1,0 +1,230 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: $secondary-color;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: $secondary-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary-color;
+}
+
+@mixin custom-button($main-color, $hover-color) {
+  border-radius: 5px;
+  color: $hover-color;
+  background-color: $main-color;
+  padding: 10px 20px;
+  border: 1px solid $main-color;
+  cursor: pointer;
+  &:hover {
+    color: $main-color;
+    background-color: $hover-color;
+    border: 0.1px solid $main-color;
+  }
+}
+
+body {
+  background-color: $secondary-color;
+  font-family: "Roboto Mono", monospace;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  overflow-y: auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  p {
+    font-weight: bold;
+  }
+}
+
+.nav-unordered-list {
+  list-style: none;
+  text-align: right;
+  li {
+    display: inline;
+    padding: 10px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link-active {
+  color: $primary-color;
+}
+
+.profile-image-container {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 10px;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 10px;
+  height: 500px;
+}
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 10px;
+}
+
+.main-header-div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  button {
+    @include custom-button($primary-color, $secondary-color);
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding: 100px 50px;
+  background-color: $section-color-2;
+}
+
+.tech-stack-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: $section-color;
+  padding: 100px 50px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary-color;
+  padding: 100px 50px;
+  align-items: flex-start;
+  button {
+    @include custom-button($primary-color, $secondary-color);
+  }
+}
+
+.footer {
+  padding: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  color: white;
+  background-color: #6a3ad3;
+  gap: 10px;
+  span {
+    margin-top: 50px;
+    font-size: 10px;
+  }
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.projects-div {
+  margin-bottom: 50px;
+}
+
+.projects-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  width: 300px;
+  margin: 32px;
+  padding: 16px;
+  height: 300px;
+  border-radius: 0.5rem;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  button {
+    @include custom-button($primary-color, $secondary-color);
+  }
+}
