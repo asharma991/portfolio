@@ -12,21 +12,15 @@ import resumePath from "./assets/resume.pdf";
 
 const homePageLink: HTMLElement | null =
   document.getElementById("homePageLink");
-homePageLink?.addEventListener("click", () => {
-  window.location.href = "/portfolio/";
-});
+homePageLink?.setAttribute("href", "/portfolio/");
 
 const aboutPageLink: HTMLElement | null =
   document.getElementById("aboutPageLink");
-aboutPageLink?.addEventListener("click", () => {
-  window.location.href = "/portfolio/about";
-});
+aboutPageLink?.setAttribute("href", "/portfolio/about");
 
 const projectsPageLink: HTMLElement | null =
   document.getElementById("projectsPageLink");
-projectsPageLink?.addEventListener("click", () => {
-  window.location.href = "/portfolio/projects";
-});
+projectsPageLink?.setAttribute("href", "/portfolio/projects");
 
 const currentPath: string = location.pathname;
 
