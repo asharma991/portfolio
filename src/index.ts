@@ -1,10 +1,8 @@
 import "./styles/main.scss";
 import profile from "./assets/profile.jpg";
-import awsLogo from "./assets/aws-logo.jpg";
 import cssLogo from "./assets/css-logo.jpg";
 import htmlLogo from "./assets/html-logo.jpg";
 import jsLogo from "./assets/js-logo.jpg";
-import nextJsLogo from "./assets/nextjs-logo.jpg";
 import reactJsLogo from "./assets/react-logo.jpg";
 import tsLogo from "./assets/ts-logo.jpg";
 import twitterLogo from "./assets/twitter-logo.svg";
@@ -26,16 +24,12 @@ if (activeLink) {
 
 const profileImg: HTMLElement | null = document.getElementById("profileImg");
 profileImg?.setAttribute("src", profile);
-const awsLogoImg: HTMLElement | null = document.getElementById("awsImg");
-awsLogoImg?.setAttribute("src", awsLogo);
 const cssLogoImg: HTMLElement | null = document.getElementById("css3Img");
 cssLogoImg?.setAttribute("src", cssLogo);
 const htmlLogoImg: HTMLElement | null = document.getElementById("html5Img");
 htmlLogoImg?.setAttribute("src", htmlLogo);
 const jsLogoImg: HTMLElement | null = document.getElementById("jsImg");
 jsLogoImg?.setAttribute("src", jsLogo);
-const nextJsLogoImg: HTMLElement | null = document.getElementById("nextImg");
-nextJsLogoImg?.setAttribute("src", nextJsLogo);
 const reactJsLogoImg: HTMLElement | null = document.getElementById("reactImg");
 reactJsLogoImg?.setAttribute("src", reactJsLogo);
 const tsLogoImg: HTMLElement | null = document.getElementById("tsImg");
