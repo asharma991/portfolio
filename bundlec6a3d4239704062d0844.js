@@ -915,17 +915,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var homePageLink = document.getElementById("homePageLink");
-homePageLink === null || homePageLink === void 0 || homePageLink.addEventListener("click", function () {
-  window.location.href = "/portfolio/";
-});
+homePageLink === null || homePageLink === void 0 || homePageLink.setAttribute("href", "/portfolio/");
 var aboutPageLink = document.getElementById("aboutPageLink");
-aboutPageLink === null || aboutPageLink === void 0 || aboutPageLink.addEventListener("click", function () {
-  window.location.href = "/portfolio/about";
-});
+aboutPageLink === null || aboutPageLink === void 0 || aboutPageLink.setAttribute("href", "/portfolio/about");
 var projectsPageLink = document.getElementById("projectsPageLink");
-projectsPageLink === null || projectsPageLink === void 0 || projectsPageLink.addEventListener("click", function () {
-  window.location.href = "/portfolio/projects";
-});
+projectsPageLink === null || projectsPageLink === void 0 || projectsPageLink.setAttribute("href", "/portfolio/projects");
 var currentPath = location.pathname;
 var linksArr = document.getElementsByClassName("link");
 var activeLink = Array.from(linksArr).find(function (link) {
@@ -958,4 +952,4 @@ resumeLink === null || resumeLink === void 0 ? void 0 : resumeLink.setAttribute(
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle74342d8827b3c524d55b.js.map
+//# sourceMappingURL=bundlec6a3d4239704062d0844.js.map
