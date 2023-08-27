@@ -8,6 +8,7 @@ import tsLogo from "./assets/ts-logo.jpg";
 import twitterLogo from "./assets/twitter-logo.svg";
 import githubLogo from "./assets/github-logo.svg";
 import linkedinLogo from "./assets/linkedin-logo.svg";
+import resumePath from "./assets/resume.pdf";
 
 const currentPath: string = location.pathname;
 
@@ -40,3 +41,5 @@ const twitterLogoSvg = document.getElementById("twitterLogo");
 twitterLogoSvg?.setAttribute("src", twitterLogo);
 const linkedinLogoSvg = document.getElementById("linkedinLogo");
 linkedinLogoSvg?.setAttribute("src", linkedinLogo);
+const resumeLink = document.getElementById("resumeLink");
+resumeLink?.setAttribute("href", resumePath);
