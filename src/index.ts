@@ -10,13 +10,32 @@ import githubLogo from "./assets/github-logo.svg";
 import linkedinLogo from "./assets/linkedin-logo.svg";
 import resumePath from "./assets/resume.pdf";
 
+const homePageLink: HTMLElement | null =
+  document.getElementById("homePageLink");
+homePageLink?.addEventListener("click", () => {
+  window.location.href = "/portfolio/";
+});
+
+const aboutPageLink: HTMLElement | null =
+  document.getElementById("aboutPageLink");
+aboutPageLink?.addEventListener("click", () => {
+  window.location.href = "/portfolio/about";
+});
+
+const projectsPageLink: HTMLElement | null =
+  document.getElementById("projectsPageLink");
+projectsPageLink?.addEventListener("click", () => {
+  window.location.href = "/portfolio/projects";
+});
+
 const currentPath: string = location.pathname;
 
 const linksArr: NodeListOf<HTMLAnchorElement> =
   document.getElementsByClassName("link");
 
 const activeLink: HTMLAnchorElement | undefined = Array.from(linksArr).find(
-  (link: HTMLAnchorElement) => link.pathname === currentPath
+  (link: HTMLAnchorElement) =>
+    link.pathname === (currentPath || currentPath.split("/")[2])
 );
 
 if (activeLink) {
