@@ -914,10 +914,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var homePageLink = document.getElementById("homePageLink");
+homePageLink === null || homePageLink === void 0 || homePageLink.addEventListener("click", function () {
+  window.location.href = "/portfolio/";
+});
+var aboutPageLink = document.getElementById("aboutPageLink");
+aboutPageLink === null || aboutPageLink === void 0 || aboutPageLink.addEventListener("click", function () {
+  window.location.href = "/portfolio/about";
+});
+var projectsPageLink = document.getElementById("projectsPageLink");
+projectsPageLink === null || projectsPageLink === void 0 || projectsPageLink.addEventListener("click", function () {
+  window.location.href = "/portfolio/projects";
+});
 var currentPath = location.pathname;
 var linksArr = document.getElementsByClassName("link");
 var activeLink = Array.from(linksArr).find(function (link) {
-  return link.pathname === currentPath;
+  return link.pathname === (currentPath || currentPath.split("/")[2]);
 });
 if (activeLink) {
   activeLink.classList.add("link-active");
@@ -946,4 +958,4 @@ resumeLink === null || resumeLink === void 0 ? void 0 : resumeLink.setAttribute(
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlead18f9c7fe3e6ae59406.js.map
+//# sourceMappingURL=bundle74342d8827b3c524d55b.js.map
