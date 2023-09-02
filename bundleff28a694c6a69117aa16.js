@@ -920,6 +920,8 @@ var aboutPageLink = document.getElementById("aboutPageLink");
 aboutPageLink === null || aboutPageLink === void 0 || aboutPageLink.setAttribute("href", "/portfolio/about");
 var projectsPageLink = document.getElementById("projectPageLink");
 projectsPageLink === null || projectsPageLink === void 0 || projectsPageLink.setAttribute("href", "/portfolio/projects");
+var projectPageLinkButton = document.getElementById("projectPageLinkButton");
+projectPageLinkButton === null || projectPageLinkButton === void 0 || projectPageLinkButton.setAttribute("href", "/portfolio/projects");
 var currentPath = location.pathname;
 var linksArr = document.getElementsByClassName("link");
 var activeLink = Array.from(linksArr).find(function (link) {
@@ -952,4 +954,4 @@ resumeLink === null || resumeLink === void 0 ? void 0 : resumeLink.setAttribute(
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle64cc17395b38444f9c3a.js.map
+//# sourceMappingURL=bundleff28a694c6a69117aa16.js.map
