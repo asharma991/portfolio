@@ -21,6 +21,10 @@ aboutPageLink?.setAttribute("href", "/portfolio/about");
 const projectsPageLink: HTMLElement | null =
   document.getElementById("projectPageLink");
 projectsPageLink?.setAttribute("href", "/portfolio/projects");
+const projectPageLinkButton: HTMLElement | null = document.getElementById(
+  "projectPageLinkButton"
+);
+projectPageLinkButton?.setAttribute("href", "/portfolio/projects");
 
 const currentPath: string = location.pathname;
 
